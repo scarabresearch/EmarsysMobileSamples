@@ -1,0 +1,466 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		582CE6D31C9164B400B0019B /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 582CE6D21C9164B400B0019B /* TabBarViewController.m */; };
+		5837AAD81C91BBD900FA22C4 /* EmarsysMobile.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5837AAD31C91BBBB00FA22C4 /* EmarsysMobile.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		587CC4B71C808886005FE28C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 587CC4B61C808886005FE28C /* main.m */; };
+		587CC4BA1C808886005FE28C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 587CC4B91C808886005FE28C /* AppDelegate.m */; };
+		587CC4C51C808886005FE28C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 587CC4C41C808886005FE28C /* Assets.xcassets */; };
+		587CC4C81C808886005FE28C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 587CC4C61C808886005FE28C /* LaunchScreen.storyboard */; };
+		99677DDE1C857C3C0050AF33 /* CartItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 99677DDD1C857C3C0050AF33 /* CartItem.m */; };
+		99765AD01C8468FD00A87C8A /* Cart.m in Sources */ = {isa = PBXBuildFile; fileRef = 99765ACF1C8468FD00A87C8A /* Cart.m */; };
+		99765AD31C846A5400A87C8A /* DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 99765AD21C846A5400A87C8A /* DataSource.m */; };
+		99765AD71C846D5A00A87C8A /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 99765AD61C846D5A00A87C8A /* Item.m */; };
+		99765ADD1C847D3F00A87C8A /* Cart+EmarsysMobileExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 99765ADC1C847D3F00A87C8A /* Cart+EmarsysMobileExtensions.m */; };
+		997E1E591C843D4E00199C55 /* ItemDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 997E1E581C843D4E00199C55 /* ItemDetailViewController.m */; };
+		997E1E5F1C843DEF00199C55 /* CartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 997E1E5E1C843DEF00199C55 /* CartViewController.m */; };
+		99D360BC1C86CD7300E7C532 /* sample.csv in Resources */ = {isa = PBXBuildFile; fileRef = 99D360BB1C86CD7300E7C532 /* sample.csv */; };
+		C90E81151C86E6C100CE49B4 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C90E81141C86E6C100CE49B4 /* LoginViewController.m */; };
+		C90E811B1C87162200CE49B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C90E81191C87162200CE49B4 /* Main.storyboard */; };
+		C90E811D1C8717AB00CE49B4 /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C90E811C1C8717AB00CE49B4 /* CategoryViewController.m */; };
+		C9106F5F1C9FF5FB000D27AC /* EmarsysMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5837AAD31C91BBBB00FA22C4 /* EmarsysMobile.framework */; };
+		C9109EEC1C8AE166007AC3E3 /* RecommendedItemsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9109EEB1C8AE166007AC3E3 /* RecommendedItemsCell.m */; };
+		C9109EEF1C8B37F3007AC3E3 /* CartItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9109EEE1C8B37F3007AC3E3 /* CartItemCell.m */; };
+		C91108AA1C89BEC40011F918 /* CategoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C91108A91C89BEC40011F918 /* CategoriesViewController.m */; };
+		C91108AD1C89CE5E0011F918 /* RecommendedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C91108AC1C89CE5E0011F918 /* RecommendedItem.m */; };
+		C91130081C90865100EDA66E /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C91130071C90865100EDA66E /* SearchViewController.m */; };
+		C911C4561C917C7800D2E0AD /* RecommendationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C911C4551C917C7800D2E0AD /* RecommendationManager.m */; };
+		C911C4591C919E6F00D2E0AD /* ItemsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C911C4581C919E6F00D2E0AD /* ItemsManager.m */; };
+		C99039001C8EF7B3005BAFB9 /* Item+EmarsysMobileExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C99038FF1C8EF7B3005BAFB9 /* Item+EmarsysMobileExtensions.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5837AAD91C91BBD900FA22C4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5837AAD81C91BBD900FA22C4 /* EmarsysMobile.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		582CE6D11C9164B400B0019B /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
+		582CE6D21C9164B400B0019B /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
+		5837AAD31C91BBBB00FA22C4 /* EmarsysMobile.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EmarsysMobile.framework; path = "../EmarsysMobileSDK/build/Release-iphoneos/EmarsysMobile.framework"; sourceTree = SOURCE_ROOT; };
+		587CC4B21C808886005FE28C /* EmarsysMobileShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmarsysMobileShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		587CC4B61C808886005FE28C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		587CC4B81C808886005FE28C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		587CC4B91C808886005FE28C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		587CC4C41C808886005FE28C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		587CC4C71C808886005FE28C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		587CC4C91C808886005FE28C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99677DDC1C857C1F0050AF33 /* CartItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CartItem.h; sourceTree = "<group>"; };
+		99677DDD1C857C3C0050AF33 /* CartItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartItem.m; sourceTree = "<group>"; };
+		99765ACE1C8468EF00A87C8A /* Cart.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cart.h; sourceTree = "<group>"; };
+		99765ACF1C8468FD00A87C8A /* Cart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cart.m; sourceTree = "<group>"; };
+		99765AD11C846A4600A87C8A /* DataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataSource.h; sourceTree = "<group>"; };
+		99765AD21C846A5400A87C8A /* DataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSource.m; sourceTree = "<group>"; };
+		99765AD51C846D4D00A87C8A /* Item.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		99765AD61C846D5A00A87C8A /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
+		99765ADB1C847D3400A87C8A /* Cart+EmarsysMobileExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Cart+EmarsysMobileExtensions.h"; sourceTree = "<group>"; };
+		99765ADC1C847D3F00A87C8A /* Cart+EmarsysMobileExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Cart+EmarsysMobileExtensions.m"; sourceTree = "<group>"; };
+		997E1E531C843BCF00199C55 /* CategoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategoryViewController.h; sourceTree = "<group>"; };
+		997E1E571C843D4300199C55 /* ItemDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemDetailViewController.h; sourceTree = "<group>"; };
+		997E1E581C843D4E00199C55 /* ItemDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemDetailViewController.m; sourceTree = "<group>"; };
+		997E1E5D1C843DE600199C55 /* CartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CartViewController.h; sourceTree = "<group>"; };
+		997E1E5E1C843DEF00199C55 /* CartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartViewController.m; sourceTree = "<group>"; };
+		99D360BB1C86CD7300E7C532 /* sample.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sample.csv; sourceTree = "<group>"; };
+		C90E81131C86E6C100CE49B4 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		C90E81141C86E6C100CE49B4 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		C90E811A1C87162200CE49B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C90E811C1C8717AB00CE49B4 /* CategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryViewController.m; sourceTree = "<group>"; };
+		C9109EEA1C8AE166007AC3E3 /* RecommendedItemsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendedItemsCell.h; sourceTree = "<group>"; };
+		C9109EEB1C8AE166007AC3E3 /* RecommendedItemsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendedItemsCell.m; sourceTree = "<group>"; };
+		C9109EED1C8B37F3007AC3E3 /* CartItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartItemCell.h; sourceTree = "<group>"; };
+		C9109EEE1C8B37F3007AC3E3 /* CartItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartItemCell.m; sourceTree = "<group>"; };
+		C91108A81C89BEC40011F918 /* CategoriesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoriesViewController.h; sourceTree = "<group>"; };
+		C91108A91C89BEC40011F918 /* CategoriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoriesViewController.m; sourceTree = "<group>"; };
+		C91108AB1C89CE5E0011F918 /* RecommendedItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendedItem.h; sourceTree = "<group>"; };
+		C91108AC1C89CE5E0011F918 /* RecommendedItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendedItem.m; sourceTree = "<group>"; };
+		C91130061C90865100EDA66E /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		C91130071C90865100EDA66E /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		C911C4541C917C7800D2E0AD /* RecommendationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendationManager.h; sourceTree = "<group>"; };
+		C911C4551C917C7800D2E0AD /* RecommendationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendationManager.m; sourceTree = "<group>"; };
+		C911C4571C919E6F00D2E0AD /* ItemsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemsManager.h; sourceTree = "<group>"; };
+		C911C4581C919E6F00D2E0AD /* ItemsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemsManager.m; sourceTree = "<group>"; };
+		C99038FE1C8EF757005BAFB9 /* Item+EmarsysMobileExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Item+EmarsysMobileExtensions.h"; sourceTree = "<group>"; };
+		C99038FF1C8EF7B3005BAFB9 /* Item+EmarsysMobileExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Item+EmarsysMobileExtensions.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		587CC4AF1C808886005FE28C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9106F5F1C9FF5FB000D27AC /* EmarsysMobile.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5837AAD21C91BBAE00FA22C4 /* EmarsysMobileSDK */ = {
+			isa = PBXGroup;
+			children = (
+				5837AAD31C91BBBB00FA22C4 /* EmarsysMobile.framework */,
+			);
+			name = EmarsysMobileSDK;
+			sourceTree = "<group>";
+		};
+		587CC4A91C808886005FE28C = {
+			isa = PBXGroup;
+			children = (
+				5837AAD21C91BBAE00FA22C4 /* EmarsysMobileSDK */,
+				99D360BA1C86CCF800E7C532 /* Resource */,
+				587CC4B41C808886005FE28C /* EmarsysMobileShop */,
+				587CC4B31C808886005FE28C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		587CC4B31C808886005FE28C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				587CC4B21C808886005FE28C /* EmarsysMobileShop.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		587CC4B41C808886005FE28C /* EmarsysMobileShop */ = {
+			isa = PBXGroup;
+			children = (
+				587CC4B81C808886005FE28C /* AppDelegate.h */,
+				587CC4B91C808886005FE28C /* AppDelegate.m */,
+				997E1E531C843BCF00199C55 /* CategoryViewController.h */,
+				C90E811C1C8717AB00CE49B4 /* CategoryViewController.m */,
+				997E1E571C843D4300199C55 /* ItemDetailViewController.h */,
+				997E1E581C843D4E00199C55 /* ItemDetailViewController.m */,
+				997E1E5D1C843DE600199C55 /* CartViewController.h */,
+				997E1E5E1C843DEF00199C55 /* CartViewController.m */,
+				587CC4C41C808886005FE28C /* Assets.xcassets */,
+				C90E81191C87162200CE49B4 /* Main.storyboard */,
+				587CC4C61C808886005FE28C /* LaunchScreen.storyboard */,
+				587CC4C91C808886005FE28C /* Info.plist */,
+				587CC4B51C808886005FE28C /* Supporting Files */,
+				99765AD51C846D4D00A87C8A /* Item.h */,
+				99765AD61C846D5A00A87C8A /* Item.m */,
+				99677DDC1C857C1F0050AF33 /* CartItem.h */,
+				99677DDD1C857C3C0050AF33 /* CartItem.m */,
+				99765ACE1C8468EF00A87C8A /* Cart.h */,
+				99765ACF1C8468FD00A87C8A /* Cart.m */,
+				99765ADB1C847D3400A87C8A /* Cart+EmarsysMobileExtensions.h */,
+				99765ADC1C847D3F00A87C8A /* Cart+EmarsysMobileExtensions.m */,
+				C99038FE1C8EF757005BAFB9 /* Item+EmarsysMobileExtensions.h */,
+				C99038FF1C8EF7B3005BAFB9 /* Item+EmarsysMobileExtensions.m */,
+				99765AD11C846A4600A87C8A /* DataSource.h */,
+				99765AD21C846A5400A87C8A /* DataSource.m */,
+				C90E81131C86E6C100CE49B4 /* LoginViewController.h */,
+				C90E81141C86E6C100CE49B4 /* LoginViewController.m */,
+				C91108A81C89BEC40011F918 /* CategoriesViewController.h */,
+				C91108A91C89BEC40011F918 /* CategoriesViewController.m */,
+				C91108AB1C89CE5E0011F918 /* RecommendedItem.h */,
+				C91108AC1C89CE5E0011F918 /* RecommendedItem.m */,
+				C9109EEA1C8AE166007AC3E3 /* RecommendedItemsCell.h */,
+				C9109EEB1C8AE166007AC3E3 /* RecommendedItemsCell.m */,
+				C9109EED1C8B37F3007AC3E3 /* CartItemCell.h */,
+				C9109EEE1C8B37F3007AC3E3 /* CartItemCell.m */,
+				C91130061C90865100EDA66E /* SearchViewController.h */,
+				C91130071C90865100EDA66E /* SearchViewController.m */,
+				582CE6D11C9164B400B0019B /* TabBarViewController.h */,
+				582CE6D21C9164B400B0019B /* TabBarViewController.m */,
+				C911C4541C917C7800D2E0AD /* RecommendationManager.h */,
+				C911C4551C917C7800D2E0AD /* RecommendationManager.m */,
+				C911C4571C919E6F00D2E0AD /* ItemsManager.h */,
+				C911C4581C919E6F00D2E0AD /* ItemsManager.m */,
+			);
+			path = EmarsysMobileShop;
+			sourceTree = "<group>";
+		};
+		587CC4B51C808886005FE28C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				587CC4B61C808886005FE28C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		99D360BA1C86CCF800E7C532 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				99D360BB1C86CD7300E7C532 /* sample.csv */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		587CC4B11C808886005FE28C /* EmarsysMobileShop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 587CC4E21C808886005FE28C /* Build configuration list for PBXNativeTarget "EmarsysMobileShop" */;
+			buildPhases = (
+				587CC4AE1C808886005FE28C /* Sources */,
+				587CC4AF1C808886005FE28C /* Frameworks */,
+				587CC4B01C808886005FE28C /* Resources */,
+				5837AAD91C91BBD900FA22C4 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EmarsysMobileShop;
+			productName = EmarsysMobileShop;
+			productReference = 587CC4B21C808886005FE28C /* EmarsysMobileShop.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		587CC4AA1C808886005FE28C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Emarsys;
+				TargetAttributes = {
+					587CC4B11C808886005FE28C = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 587CC4AD1C808886005FE28C /* Build configuration list for PBXProject "EmarsysMobileShop" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 587CC4A91C808886005FE28C;
+			productRefGroup = 587CC4B31C808886005FE28C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				587CC4B11C808886005FE28C /* EmarsysMobileShop */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		587CC4B01C808886005FE28C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				587CC4C81C808886005FE28C /* LaunchScreen.storyboard in Resources */,
+				587CC4C51C808886005FE28C /* Assets.xcassets in Resources */,
+				99D360BC1C86CD7300E7C532 /* sample.csv in Resources */,
+				C90E811B1C87162200CE49B4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		587CC4AE1C808886005FE28C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				997E1E591C843D4E00199C55 /* ItemDetailViewController.m in Sources */,
+				99677DDE1C857C3C0050AF33 /* CartItem.m in Sources */,
+				C9109EEF1C8B37F3007AC3E3 /* CartItemCell.m in Sources */,
+				C911C4561C917C7800D2E0AD /* RecommendationManager.m in Sources */,
+				C91108AA1C89BEC40011F918 /* CategoriesViewController.m in Sources */,
+				C91130081C90865100EDA66E /* SearchViewController.m in Sources */,
+				C90E81151C86E6C100CE49B4 /* LoginViewController.m in Sources */,
+				99765AD31C846A5400A87C8A /* DataSource.m in Sources */,
+				C9109EEC1C8AE166007AC3E3 /* RecommendedItemsCell.m in Sources */,
+				587CC4BA1C808886005FE28C /* AppDelegate.m in Sources */,
+				99765AD01C8468FD00A87C8A /* Cart.m in Sources */,
+				997E1E5F1C843DEF00199C55 /* CartViewController.m in Sources */,
+				99765AD71C846D5A00A87C8A /* Item.m in Sources */,
+				C91108AD1C89CE5E0011F918 /* RecommendedItem.m in Sources */,
+				C99039001C8EF7B3005BAFB9 /* Item+EmarsysMobileExtensions.m in Sources */,
+				C911C4591C919E6F00D2E0AD /* ItemsManager.m in Sources */,
+				C90E811D1C8717AB00CE49B4 /* CategoryViewController.m in Sources */,
+				587CC4B71C808886005FE28C /* main.m in Sources */,
+				582CE6D31C9164B400B0019B /* TabBarViewController.m in Sources */,
+				99765ADD1C847D3F00A87C8A /* Cart+EmarsysMobileExtensions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		587CC4C61C808886005FE28C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				587CC4C71C808886005FE28C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C90E81191C87162200CE49B4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C90E811A1C87162200CE49B4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		587CC4E01C808886005FE28C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		587CC4E11C808886005FE28C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		587CC4E31C808886005FE28C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../EmarsysMobileSDK/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"",
+					"\"$(SRCROOT)/../EmarsysMobileSDK/build/Release$(EFFECTIVE_PLATFORM_NAME)\"",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/EmarsysMobileShop/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=iphonesimulator*]" = "$(inherited) \"$(SRCROOT)/../EmarsysMobileSDK/build/$(CONFIGURATION)-iphonesimulator\"";
+				PRODUCT_BUNDLE_IDENTIFIER = com.emarsys.EmarsysMobileShop;
+				PRODUCT_NAME = EmarsysMobileShop;
+				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		587CC4E41C808886005FE28C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../EmarsysMobileSDK/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"",
+					"\"$(SRCROOT)/../EmarsysMobileSDK/build/Release$(EFFECTIVE_PLATFORM_NAME)\"",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/EmarsysMobileShop/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=*]" = "$(inherited) \"$(SRCROOT)/../EmarsysMobileSDK/build/$(CONFIGURATION)-iphonesimulator\"";
+				PRODUCT_BUNDLE_IDENTIFIER = com.emarsys.EmarsysMobileShop;
+				PRODUCT_NAME = EmarsysMobileShop;
+				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		587CC4AD1C808886005FE28C /* Build configuration list for PBXProject "EmarsysMobileShop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				587CC4E01C808886005FE28C /* Debug */,
+				587CC4E11C808886005FE28C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		587CC4E21C808886005FE28C /* Build configuration list for PBXNativeTarget "EmarsysMobileShop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				587CC4E31C808886005FE28C /* Debug */,
+				587CC4E41C808886005FE28C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 587CC4AA1C808886005FE28C /* Project object */;
+}
