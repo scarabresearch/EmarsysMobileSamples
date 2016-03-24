@@ -5,6 +5,8 @@
 
 #import "DataSource.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @implementation DataSource
 
 - (nullable instancetype)init {
@@ -12,7 +14,7 @@
     return nil;
 }
 
-+ (nonnull DataSource *)sharedDataSource {
++ (DataSource *)sharedDataSource {
     static DataSource *_shared = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -21,7 +23,7 @@
     return _shared;
 }
 
-- (nonnull instancetype)initInternal {
+- (instancetype)initInternal {
     self = [super init];
     if (self) {
         _items = [[NSMutableArray alloc] init];
@@ -76,10 +78,12 @@
     return self;
 }
 
-- (NSArray<Item *> *_Nonnull)itemsFromCategory:(NSString *_Nonnull)category {
+- (NSArray<Item *> *)itemsFromCategory:(NSString *)category {
     NSPredicate *predicate =
         [NSPredicate predicateWithFormat:@"category == %@", category];
     return [_items filteredArrayUsingPredicate:predicate];
 }
 
 @end
+
+NS_ASSUME_NONNULL_END

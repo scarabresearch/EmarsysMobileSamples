@@ -7,12 +7,16 @@
 
 #import "Item.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface DataSource : NSObject
 
 + (nonnull DataSource *)sharedDataSource;
-- (NSArray<Item *> *_Nonnull)itemsFromCategory:(NSString *_Nonnull)category;
+- (NSArray<Item *> *)itemsFromCategory:(NSString *)category;
 
-@property(readonly) NSMutableArray<NSString *> *_Nonnull categories;
-@property(readonly) NSMutableArray<Item *> *_Nonnull items;
+@property(readonly) NSMutableArray<NSString *> *categories;
+@property(readonly) NSMutableArray<Item *> *items;
 
 @end
+
+NS_ASSUME_NONNULL_END

@@ -4,6 +4,7 @@
 //
 
 @import EmarsysMobile;
+@import AdSupport.ASIdentifierManager;
 
 #import "LoginViewController.h"
 
@@ -140,6 +141,27 @@ NSString *const ItemDetailLogic = @"item_detail_logic";
 
     UIAlertController *alert = [UIAlertController
         alertControllerWithTitle:@"Save was successful"
+                         message:nil
+                  preferredStyle:UIAlertControllerStyleAlert];
+
+    UIAlertAction *defaultAction =
+        [UIAlertAction actionWithTitle:@"OK"
+                                 style:UIAlertActionStyleDefault
+                               handler:^(UIAlertAction *action){
+                               }];
+    [alert addAction:defaultAction];
+    [self presentViewController:alert animated:YES completion:nil];
+}
+
+- (IBAction)showIDs:(id)sender {
+    NSString *message =
+        [NSString stringWithFormat:@"IDFA:\n%@\n\nAdvertising UUID:\n%@",
+                                   [[ASIdentifierManager sharedManager]
+                                       advertisingIdentifier]
+                                       .UUIDString,
+                                   [[EMSession sharedSession] advertisingID]];
+    UIAlertController *alert = [UIAlertController
+        alertControllerWithTitle:message
                          message:nil
                   preferredStyle:UIAlertControllerStyleAlert];
 

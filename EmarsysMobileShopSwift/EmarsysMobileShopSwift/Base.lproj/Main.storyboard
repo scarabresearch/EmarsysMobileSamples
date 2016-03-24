@@ -426,6 +426,13 @@
                                 </segments>
                                 <color key="tintColor" red="0.430673639" green="0.65988756559999995" blue="0.81512901419999995" alpha="1" colorSpace="calibratedRGB"/>
                             </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Dh-NX-aQc">
+                                <rect key="frame" x="236" y="329" width="64" height="30"/>
+                                <state key="normal" title="Show IDs"/>
+                                <connections>
+                                    <action selector="showIDs:" destination="0Jg-Ei-R3u" eventType="touchUpInside" id="EEN-FB-3oZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -450,8 +457,10 @@
                             <constraint firstItem="uPS-Ew-uss" firstAttribute="trailing" secondItem="tcv-rh-dZQ" secondAttribute="trailing" id="m7K-Wq-OMe"/>
                             <constraint firstItem="tcv-rh-dZQ" firstAttribute="leading" secondItem="KoC-if-Muh" secondAttribute="leading" id="mij-Vs-NMa"/>
                             <constraint firstItem="czf-fm-uPa" firstAttribute="top" secondItem="1nV-Mf-QS1" secondAttribute="bottom" constant="8" id="n68-om-Wfs"/>
+                            <constraint firstAttribute="trailing" secondItem="4Dh-NX-aQc" secondAttribute="trailing" constant="20" id="tEL-jE-a1L"/>
                             <constraint firstItem="Pre-U2-SAp" firstAttribute="top" secondItem="uPS-Ew-uss" secondAttribute="bottom" constant="8" id="tpE-1p-sun"/>
                             <constraint firstItem="LCv-Hc-g3C" firstAttribute="top" secondItem="bfz-XH-8Jg" secondAttribute="bottom" constant="8" id="x8r-Wv-ITB"/>
+                            <constraint firstItem="50R-vH-RTK" firstAttribute="top" secondItem="4Dh-NX-aQc" secondAttribute="bottom" constant="8" id="zlN-gz-07u"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>

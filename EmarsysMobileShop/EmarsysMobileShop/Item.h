@@ -6,17 +6,22 @@
 @import Foundation;
 @import EmarsysMobile;
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface Item : NSObject
 
-@property(readwrite) NSString *_Nonnull itemID;
-@property(readwrite) NSString *_Nullable link;
-@property(readwrite) NSString *_Nullable title;
-@property(readwrite) NSString *_Nullable image;
-@property(readwrite) NSString *_Nullable category;
+@property(readwrite) NSString *itemID;
+@property(readwrite, nullable) NSString *link;
+@property(readwrite, nullable) NSString *title;
+@property(readwrite, nullable) NSString *image;
+@property(readwrite, nullable) NSString *category;
 @property(readwrite) float price;
 @property(readwrite) bool available;
-@property(readwrite) NSString *_Nullable brand;
-@property(readonly) EMRecommendationItem *_Nullable srcItem;
+@property(readwrite, nullable) NSString *brand;
+@property(readonly, nullable) EMRecommendationItem *srcItem;
 
-- (nonnull instancetype)initWithItem:(nonnull EMRecommendationItem *)item;
+- (instancetype)initWithItem:(EMRecommendationItem *)item;
+
 @end
+
+NS_ASSUME_NONNULL_END

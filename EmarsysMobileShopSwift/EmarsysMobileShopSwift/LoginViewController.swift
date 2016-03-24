@@ -6,6 +6,7 @@
 
 import UIKit
 import EmarsysMobile
+import AdSupport
 
 enum UserDefaultsKeys : String {
     case Email = "customer_email"
@@ -84,6 +85,13 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         defaults.synchronize()
         
         let alert = UIAlertController(title: "Save was successful", message: nil, preferredStyle: .Alert)
+        let defaultAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: {(action) in })
+        alert.addAction(defaultAction)
+        presentViewController(alert, animated: true, completion: nil)
+    }
+    
+    @IBAction func showIDs(sender: AnyObject) {
+        let alert = UIAlertController(title: "IDFA:\n\(ASIdentifierManager.sharedManager().advertisingIdentifier?.UUIDString ?? "nil")\n\nAdvertising UUID:\n\(EMSession.sharedSession().advertisingID)", message: nil, preferredStyle: .Alert)
         let defaultAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: {(action) in })
         alert.addAction(defaultAction)
         presentViewController(alert, animated: true, completion: nil)

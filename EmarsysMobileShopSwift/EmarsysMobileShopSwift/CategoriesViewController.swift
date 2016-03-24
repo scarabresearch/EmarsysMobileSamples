@@ -39,13 +39,7 @@ class CategoriesViewController: UIViewController, UITableViewDataSource, UITable
         if tableView == categoriesTableView {
             return ""
         } else if section < categories.count {
-            var category = categories[section]
-            let needle = "Root Catalog>"
-            if let range = category.rangeOfString(needle) {
-                let idx = range.endIndex
-                category = category.substringFromIndex(idx)
-            }
-            return category
+            return categories[section]
         } else {
             return ""
         }

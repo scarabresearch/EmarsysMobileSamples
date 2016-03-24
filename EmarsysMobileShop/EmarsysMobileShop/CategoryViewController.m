@@ -32,28 +32,17 @@ static NSString *const reuseIdentifier = @"ItemCell";
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-
     // Deselect all rows
     for (NSIndexPath *indexPath in self.categoryTableView
              .indexPathsForSelectedRows) {
         [self.categoryTableView deselectRowAtIndexPath:indexPath animated:NO];
     }
-
-    NSString *categoryWihoutRootPrefix = self.category;
-
-    NSString *szNeedle = @"Root Catalog>";
-    NSRange range = [categoryWihoutRootPrefix rangeOfString:szNeedle];
-    if (range.location != NSNotFound) {
-        NSInteger idx = range.location + range.length;
-        categoryWihoutRootPrefix =
-            [categoryWihoutRootPrefix substringFromIndex:idx];
-    }
-
-    self.title = categoryWihoutRootPrefix;
-    self.originalItems = [[DataSource sharedDataSource]
-        itemsFromCategory:categoryWihoutRootPrefix];
-    self.itemsManager.items = (self.searchTerm && self.searchTerm.length) ? self.searchResults : self.originalItems;
-
+    self.title = self.category;
+    self.originalItems =
+        [[DataSource sharedDataSource] itemsFromCategory:self.category];
+    self.itemsManager.items = (self.searchTerm && self.searchTerm.length)
+                                  ? self.searchResults
+                                  : self.originalItems;
     [self sendRecommend];
 }
 

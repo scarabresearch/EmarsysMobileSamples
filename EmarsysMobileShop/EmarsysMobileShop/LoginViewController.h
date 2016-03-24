@@ -20,5 +20,6 @@ UIKIT_EXTERN NSString *const ItemDetailLogic;
 @property BOOL isLogin;
 - (IBAction)login:(id)sender;
 - (IBAction)save:(id)sender;
+- (IBAction)showIDs:(id)sender;
 
 @end

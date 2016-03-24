@@ -6,9 +6,11 @@
 #import "Item.h"
 #import "Item+EmarsysMobileExtensions.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @implementation Item
 
-- (nonnull instancetype)initWithItem:(nonnull EMRecommendationItem *)item {
+- (instancetype)initWithItem:(EMRecommendationItem *)item {
     self = [super init];
     if (self) {
         _srcItem = item;
@@ -18,3 +20,5 @@
 }
 
 @end
+
+NS_ASSUME_NONNULL_END

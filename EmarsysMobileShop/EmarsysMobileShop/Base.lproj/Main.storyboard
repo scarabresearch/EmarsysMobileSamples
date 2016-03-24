@@ -429,9 +429,17 @@
                                 </segments>
                                 <color key="tintColor" red="0.430673639" green="0.65988756559999995" blue="0.81512901419999995" alpha="1" colorSpace="calibratedRGB"/>
                             </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GA4-Jt-20v">
+                                <rect key="frame" x="236" y="329" width="64" height="30"/>
+                                <state key="normal" title="Show IDs"/>
+                                <connections>
+                                    <action selector="showIDs:" destination="0Jg-Ei-R3u" eventType="touchUpInside" id="0pc-ue-66i"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="GA4-Jt-20v" secondAttribute="trailing" constant="20" id="5ge-1l-BwV"/>
                             <constraint firstItem="LCv-Hc-g3C" firstAttribute="leading" secondItem="ZFg-Ot-A8t" secondAttribute="leading" id="60i-td-cuP"/>
                             <constraint firstItem="tcv-rh-dZQ" firstAttribute="trailing" secondItem="bfz-XH-8Jg" secondAttribute="trailing" id="6hL-dG-6kI"/>
                             <constraint firstItem="1nV-Mf-QS1" firstAttribute="top" secondItem="Pre-U2-SAp" secondAttribute="bottom" constant="8" id="9cL-ch-5c7"/>
@@ -448,6 +456,7 @@
                             <constraint firstItem="bfz-XH-8Jg" firstAttribute="leading" secondItem="eM1-K8-m4p" secondAttribute="leading" constant="20" id="UtW-fw-gwi"/>
                             <constraint firstItem="tcv-rh-dZQ" firstAttribute="leading" secondItem="ZFg-Ot-A8t" secondAttribute="leading" id="abK-Qh-HSk"/>
                             <constraint firstItem="1nV-Mf-QS1" firstAttribute="trailing" secondItem="bfz-XH-8Jg" secondAttribute="trailing" id="giQ-xL-mKU"/>
+                            <constraint firstItem="50R-vH-RTK" firstAttribute="top" secondItem="GA4-Jt-20v" secondAttribute="bottom" constant="8" id="k6o-PW-xvm"/>
                             <constraint firstItem="1nV-Mf-QS1" firstAttribute="leading" secondItem="ZFg-Ot-A8t" secondAttribute="leading" id="lpS-zw-hnc"/>
                             <constraint firstItem="Pre-U2-SAp" firstAttribute="leading" secondItem="ZFg-Ot-A8t" secondAttribute="leading" id="lva-Wk-7R7"/>
                             <constraint firstItem="uPS-Ew-uss" firstAttribute="trailing" secondItem="tcv-rh-dZQ" secondAttribute="trailing" id="m7K-Wq-OMe"/>

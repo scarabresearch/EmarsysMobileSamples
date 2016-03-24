@@ -8,11 +8,15 @@
 #import "Item.h"
 #import "CartItem.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface Cart : NSObject
 
-+ (nonnull Cart *)sharedCart;
-- (void)addItem:(Item *_Nonnull)item;
++ (Cart *)sharedCart;
+- (void)addItem:(Item *)item;
 
-@property(readonly) NSMutableArray<CartItem *> *_Nonnull cartItems;
+@property(readonly) NSMutableArray<CartItem *> *cartItems;
 
 @end
+
+NS_ASSUME_NONNULL_END

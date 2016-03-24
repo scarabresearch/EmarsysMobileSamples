@@ -33,19 +33,9 @@ class CategoryViewController: UIViewController, UITabBarDelegate, UISearchBarDel
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        
-        var categoryWihoutRootPrefix = category
-        
-        let needle = "Root Catalog>"
-        if let range = categoryWihoutRootPrefix!.rangeOfString(needle) {
-            let idx = range.endIndex
-            categoryWihoutRootPrefix = categoryWihoutRootPrefix!.substringFromIndex(idx)
-        }
-        title = categoryWihoutRootPrefix
-        
-        originalItems = DataSource.sharedDataSource.itemsFromCategory(categoryWihoutRootPrefix)
+        title = category
+        originalItems = DataSource.sharedDataSource.itemsFromCategory(category)
         itemsManager.items = searchTerm.isEmpty ? originalItems : searchResults
-        
         sendRecommend()
     }
     

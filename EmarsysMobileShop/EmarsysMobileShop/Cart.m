@@ -5,6 +5,8 @@
 
 #import "Cart.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @implementation Cart
 
 - (nullable instancetype)init {
@@ -12,7 +14,7 @@
     return nil;
 }
 
-- (nonnull instancetype)initInternal {
+- (instancetype)initInternal {
     self = [super init];
     if (self) {
         _cartItems = [[NSMutableArray alloc] init];
@@ -20,7 +22,7 @@
     return self;
 }
 
-+ (nonnull Cart *)sharedCart {
++ (Cart *)sharedCart {
     static Cart *_shared = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -29,7 +31,7 @@
     return _shared;
 }
 
-- (void)addItem:(Item *_Nonnull)item {
+- (void)addItem:(Item *)item {
     for (CartItem *next in _cartItems) {
         if ([next.item.itemID isEqualToString:item.itemID]) {
             next.count++;
@@ -43,3 +45,5 @@
 }
 
 @end
+
+NS_ASSUME_NONNULL_END

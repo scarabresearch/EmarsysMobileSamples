@@ -59,16 +59,7 @@ titleForHeaderInSection:(NSInteger)section {
     if (tableView == self.categoriesTableView) {
         return @"";
     } else {
-
-        NSString *category = [_categories objectAtIndex:section];
-
-        NSString *szNeedle = @"Root Catalog>";
-        NSRange range = [category rangeOfString:szNeedle];
-        if (range.location != NSNotFound) {
-            NSInteger idx = range.location + range.length;
-            category = [category substringFromIndex:idx];
-        }
-        return category;
+        return [_categories objectAtIndex:section];
     }
 }
 
