@@ -431,7 +431,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/EmarsysMobileShop/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=*]" = "$(inherited) \"$(SRCROOT)/../EmarsysMobileSDK/build/$(CONFIGURATION)-iphonesimulator\"";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=iphonesimulator*]" = "$(inherited) \"$(SRCROOT)/../EmarsysMobileSDK/build/$(CONFIGURATION)-iphonesimulator\"";
 				PRODUCT_BUNDLE_IDENTIFIER = com.emarsys.EmarsysMobileShop;
 				PRODUCT_NAME = EmarsysMobileShop;
 				TARGETED_DEVICE_FAMILY = 1;

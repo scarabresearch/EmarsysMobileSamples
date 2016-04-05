@@ -353,8 +353,8 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/EmarsysMobileShopSwift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[arch=*]" = "$(inherited) \"$(SRCROOT)/../EmarsysMobileSDK/build/$(CONFIGURATION)-iphonesimulator\"";
 				PRODUCT_BUNDLE_IDENTIFIER = com.emarsys.EmarsysMobileShopSwift;
+				"LD_RUNPATH_SEARCH_PATHS[sdk=iphonesimulator*]" = "$(inherited) \"$(SRCROOT)/../EmarsysMobileSDK/build/$(CONFIGURATION)-iphonesimulator\"";
 				PRODUCT_NAME = EmarsysMobileShopSwift;
 			};
 			name = Debug;
@@ -370,8 +370,8 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/EmarsysMobileShopSwift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[arch=*]" = "$(inherited) \"$(SRCROOT)/../EmarsysMobileSDK/build/$(CONFIGURATION)-iphonesimulator\"";
 				PRODUCT_BUNDLE_IDENTIFIER = com.emarsys.EmarsysMobileShopSwift;
+				"LD_RUNPATH_SEARCH_PATHS[sdk=iphonesimulator*]" = "$(inherited) \"$(SRCROOT)/../EmarsysMobileSDK/build/$(CONFIGURATION)-iphonesimulator\"";
 				PRODUCT_NAME = EmarsysMobileShopSwift;
 			};
 			name = Release;
