@@ -6,11 +6,11 @@
 
 ### Build Instructions
 ```sh
-$ git clone git@github.com:scarabresearch/EmarsysMobileSamples.git EmarsysMobileSamples
-$ cd EmarsysMobileSamples
-$ git clone git@github.com:scarabresearch/EmarsysMobileSDK.git EmarsysMobileSDK
-$ cd EmarsysMobileSDK
+$ git clone git@github.com:scarabresearch/EmarsysMobileSamples.git EmarsysPredictSamples
+$ cd EmarsysPredictSamples
+$ git clone git@github.com:scarabresearch/EmarsysPredictSDK.git EmarsysPredictSDK
+$ cd EmarsysPredictSDK
 $ ./sdk-build
 ```
-* Open the Objective-C sample (EmarsysMobileShop) in Xcode and press Run
-* Open the Swift sample (EmarsysMobileShopSwift) in Xcode and press Run
+* Open the Objective-C sample (EmarsysPredictShop) in Xcode and press Run
+* Open the Swift sample (EmarsysPredictShopSwift) in Xcode and press Run
