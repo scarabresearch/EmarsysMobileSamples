@@ -2,15 +2,17 @@
 
 ### Requirements
 - Xcode 7.2.1 or later
-- Emarsys Mobile SDK
+- CocoaPods
 
 ### Build Instructions
 ```sh
-$ git clone git@github.com:scarabresearch/EmarsysMobileSamples.git EmarsysPredictSamples
-$ cd EmarsysPredictSamples
-$ git clone git@github.com:scarabresearch/EmarsysPredictSDK.git EmarsysPredictSDK
-$ cd EmarsysPredictSDK
-$ ./sdk-build
+$ git clone https://github.com/scarabresearch/EmarsysMobileSamples
+$ cd ./EmarsysMobileSamples
+$ cd ./EmarsysPredictShop
+$ pod install
+$ cd ..
+$ cd ./EmarsysPredictShopSwift
+$ pod install
 ```
-* Open the Objective-C sample (EmarsysPredictShop) in Xcode and press Run
-* Open the Swift sample (EmarsysPredictShopSwift) in Xcode and press Run
+* Open the Objective-C sample (EmarsysPredictShop.xcworkspace) in Xcode and press Run
+* Open the Swift sample (EmarsysPredictShopSwift.xcworkspace) in Xcode and press Run

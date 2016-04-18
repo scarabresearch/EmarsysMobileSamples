@@ -12,8 +12,6 @@
 		C914A9371C9948FB00596F87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C914A9361C9948FB00596F87 /* Assets.xcassets */; };
 		C914A93A1C9948FB00596F87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C914A9381C9948FB00596F87 /* LaunchScreen.storyboard */; };
 		C914A9431C994A1B00596F87 /* sample.csv in Resources */ = {isa = PBXBuildFile; fileRef = C914A9421C994A1B00596F87 /* sample.csv */; };
-		C914A9471C994B4300596F87 /* EmarsysPredictSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C914A9451C994B2A00596F87 /* EmarsysPredictSDK.framework */; };
-		C914A9481C994B4300596F87 /* EmarsysPredictSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C914A9451C994B2A00596F87 /* EmarsysPredictSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C914A94B1C994EA200596F87 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C914A94A1C994EA200596F87 /* DataSource.swift */; };
 		C914A94D1C9952BC00596F87 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = C914A94C1C9952BC00596F87 /* Item.swift */; };
 		C914A9511C99824400596F87 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C914A9501C99824400596F87 /* CategoriesViewController.swift */; };
@@ -39,7 +37,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C914A9481C994B4300596F87 /* EmarsysPredictSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,7 +51,6 @@
 		C914A9391C9948FB00596F87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C914A93B1C9948FB00596F87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C914A9421C994A1B00596F87 /* sample.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sample.csv; sourceTree = "<group>"; };
-		C914A9451C994B2A00596F87 /* EmarsysPredictSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EmarsysPredictSDK.framework; path = "../EmarsysPredictSDK/build/Release-iphoneos/EmarsysPredictSDK.framework"; sourceTree = "<group>"; };
 		C914A94A1C994EA200596F87 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		C914A94C1C9952BC00596F87 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		C914A9501C99824400596F87 /* CategoriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
@@ -78,7 +74,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C914A9471C994B4300596F87 /* EmarsysPredictSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +83,6 @@
 		C914A9231C9948FB00596F87 = {
 			isa = PBXGroup;
 			children = (
-				C914A9441C994ABA00596F87 /* EmarsysPredictSDK */,
 				C914A9411C9949EF00596F87 /* Resource */,
 				C914A92E1C9948FB00596F87 /* EmarsysPredictShopSwift */,
 				C914A92D1C9948FB00596F87 /* Products */,
@@ -137,14 +131,6 @@
 				C914A9421C994A1B00596F87 /* sample.csv */,
 			);
 			name = Resource;
-			sourceTree = "<group>";
-		};
-		C914A9441C994ABA00596F87 /* EmarsysPredictSDK */ = {
-			isa = PBXGroup;
-			children = (
-				C914A9451C994B2A00596F87 /* EmarsysPredictSDK.framework */,
-			);
-			name = EmarsysPredictSDK;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

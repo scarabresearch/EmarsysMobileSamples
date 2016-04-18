@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		582CE6D31C9164B400B0019B /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 582CE6D21C9164B400B0019B /* TabBarViewController.m */; };
-		5837AAD81C91BBD900FA22C4 /* EmarsysPredictSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5837AAD31C91BBBB00FA22C4 /* EmarsysPredictSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		587CC4B71C808886005FE28C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 587CC4B61C808886005FE28C /* main.m */; };
 		587CC4BA1C808886005FE28C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 587CC4B91C808886005FE28C /* AppDelegate.m */; };
 		587CC4C51C808886005FE28C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 587CC4C41C808886005FE28C /* Assets.xcassets */; };
@@ -24,7 +23,6 @@
 		C90E81151C86E6C100CE49B4 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C90E81141C86E6C100CE49B4 /* LoginViewController.m */; };
 		C90E811B1C87162200CE49B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C90E81191C87162200CE49B4 /* Main.storyboard */; };
 		C90E811D1C8717AB00CE49B4 /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C90E811C1C8717AB00CE49B4 /* CategoryViewController.m */; };
-		C9106F5F1C9FF5FB000D27AC /* EmarsysPredictSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5837AAD31C91BBBB00FA22C4 /* EmarsysPredictSDK.framework */; };
 		C9109EEC1C8AE166007AC3E3 /* RecommendedItemsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9109EEB1C8AE166007AC3E3 /* RecommendedItemsCell.m */; };
 		C9109EEF1C8B37F3007AC3E3 /* CartItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9109EEE1C8B37F3007AC3E3 /* CartItemCell.m */; };
 		C91108AA1C89BEC40011F918 /* CategoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C91108A91C89BEC40011F918 /* CategoriesViewController.m */; };
@@ -42,7 +40,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				5837AAD81C91BBD900FA22C4 /* EmarsysPredictSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -52,7 +49,6 @@
 /* Begin PBXFileReference section */
 		582CE6D11C9164B400B0019B /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
 		582CE6D21C9164B400B0019B /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
-		5837AAD31C91BBBB00FA22C4 /* EmarsysPredictSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EmarsysPredictSDK.framework; path = "../EmarsysPredictSDK/build/Release-iphoneos/EmarsysPredictSDK.framework"; sourceTree = SOURCE_ROOT; };
 		587CC4B21C808886005FE28C /* EmarsysPredictShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmarsysPredictShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		587CC4B61C808886005FE28C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		587CC4B81C808886005FE28C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -103,25 +99,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9106F5F1C9FF5FB000D27AC /* EmarsysPredictSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5837AAD21C91BBAE00FA22C4 /* EmarsysPredictSDK */ = {
-			isa = PBXGroup;
-			children = (
-				5837AAD31C91BBBB00FA22C4 /* EmarsysPredictSDK.framework */,
-			);
-			name = EmarsysPredictSDK;
-			sourceTree = "<group>";
-		};
 		587CC4A91C808886005FE28C = {
 			isa = PBXGroup;
 			children = (
-				5837AAD21C91BBAE00FA22C4 /* EmarsysPredictSDK */,
 				99D360BA1C86CCF800E7C532 /* Resource */,
 				587CC4B41C808886005FE28C /* EmarsysPredictShop */,
 				587CC4B31C808886005FE28C /* Products */,

@@ -9,4 +9,9 @@
 # Generated build folders
 **/build
 **/Build
-/EmarsysPredictSDK
+EmarsysPredictShop/EmarsysPredictShop.xcworkspace
+EmarsysPredictShop/Podfile.lock
+EmarsysPredictShop/Pods
+EmarsysPredictShopSwift/EmarsysPredictShopSwift.xcworkspace
+EmarsysPredictShopSwift/Podfile.lock
+EmarsysPredictShopSwift/Pods
