@@ -4,7 +4,7 @@
 //
 
 @import UIKit;
-@import EmarsysPredictSDK;
+#import <EmarsysPredictSDK/EmarsysPredictSDK.h>
 
 #import "CategoriesViewController.h"
 #import "Cart+EmarsysPredictSDKExtensions.h"

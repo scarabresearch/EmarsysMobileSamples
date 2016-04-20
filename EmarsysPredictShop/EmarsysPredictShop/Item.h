@@ -4,7 +4,7 @@
 //
 
 @import Foundation;
-@import EmarsysPredictSDK;
+#import <EmarsysPredictSDK/EmarsysPredictSDK.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

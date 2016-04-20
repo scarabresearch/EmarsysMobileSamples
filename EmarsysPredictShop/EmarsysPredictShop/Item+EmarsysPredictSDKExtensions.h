@@ -3,7 +3,7 @@
 //  EmarsysPredictShop
 //
 
-@import EmarsysPredictSDK;
+#import <EmarsysPredictSDK/EmarsysPredictSDK.h>
 #import "Item.h"
 
 @interface Item (EmarsysPredictSDKExtensions)

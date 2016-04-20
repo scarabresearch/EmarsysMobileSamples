@@ -4,7 +4,7 @@
 //
 
 @import Foundation;
-@import EmarsysPredictSDK;
+#import <EmarsysPredictSDK/EmarsysPredictSDK.h>
 
 #import "ItemDetailViewController.h"
 #import "Cart+EmarsysPredictSDKExtensions.h"

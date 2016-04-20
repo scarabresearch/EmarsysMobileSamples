@@ -3,7 +3,7 @@
 //  EmarsysPredictShop
 //
 
-@import EmarsysPredictSDK;
+#import <EmarsysPredictSDK/EmarsysPredictSDK.h>
 @import AdSupport.ASIdentifierManager;
 
 #import "LoginViewController.h"

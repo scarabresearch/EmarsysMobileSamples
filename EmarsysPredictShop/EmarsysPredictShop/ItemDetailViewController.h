@@ -4,9 +4,8 @@
 //
 
 @import UIKit;
-@import EmarsysPredictSDK;
+#import <EmarsysPredictSDK/EmarsysPredictSDK.h>
 
-@import EmarsysPredictSDK;
 #import "Item.h"
 #import "LoginViewController.h"
 #import "RecommendationManager.h"

@@ -1,2 +1,2 @@
 platform :ios, '8.4'
-pod 'EmarsysPredictSDK', '>= 0.1'
+pod 'EmarsysPredictSDK', '>= 1.0'
