@@ -97,7 +97,7 @@ static NSString *const reuseIdentifier = @"ItemCell";
 
     EMSession *emarsysSession = [EMSession sharedSession];
     EMTransaction *transaction =
-        [[EMTransaction alloc] initWithItem:_item.srcItem];
+        [[EMTransaction alloc] initWithSelectedItemView:_item.srcItem];
 
     NSArray<EMCartItem *> *cartItems = [[Cart sharedCart] convertItems];
     [transaction setCart:cartItems];

@@ -82,7 +82,7 @@ class ItemDetailViewController: UIViewController, RecommendationManagerDelegate 
     
     func sendRecommend() {
         let emarsysSession = EMSession.sharedSession()
-        let transaction = EMTransaction()
+        let transaction = EMTransaction.init(item: item.srcItem)
         let cartItems = Cart.sharedCart.convertItems()
         transaction.setCart(cartItems)
         transaction.setView(item.itemID)
