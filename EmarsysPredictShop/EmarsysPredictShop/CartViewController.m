@@ -249,6 +249,8 @@ static NSString *const reuseIdentifier = @"ItemCell";
 }
 
 - (void)sendRecommend {
+    [self.recommendResults removeAllObjects];
+    [self.recommendedCollectionView reloadData];
 
     EMSession *emarsysSession = [EMSession sharedSession];
     EMTransaction *transaction = [[EMTransaction alloc] init];
@@ -260,8 +262,6 @@ static NSString *const reuseIdentifier = @"ItemCell";
     /// the visitor's cart is empty, send the empty array [].
     NSArray<EMCartItem *> *cartItems = [[Cart sharedCart] convertItems];
     [transaction setCart:cartItems];
-
-    self.recommendResults = [[NSMutableArray alloc] init];
 
     EMRecommendationRequest *recommend =
         [[EMRecommendationRequest alloc] initWithLogic:@"CART"];

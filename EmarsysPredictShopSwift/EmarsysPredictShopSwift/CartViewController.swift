@@ -158,6 +158,9 @@ class CartViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     func sendRecommend() {
+        self.recommendResults.removeAll()
+        self.recommendedCollectionView.reloadData()
+        
         let emarsysSession = EMSession.sharedSession()
         let transaction = EMTransaction()
         let cartItems = Cart.sharedCart.convertItems()

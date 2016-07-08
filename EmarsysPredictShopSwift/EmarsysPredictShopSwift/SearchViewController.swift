@@ -76,6 +76,9 @@ class SearchViewController: UIViewController, UITabBarDelegate, UISearchBarDeleg
     }
     
     func sendRecommend() {
+        recommendationManager.recommendResults.removeAll()
+        self.recommendedCollectionView.reloadData()
+        
         let emarsysSession = EMSession.sharedSession()
         let transaction = EMTransaction()
         let cartItems = Cart.sharedCart.convertItems()
@@ -84,8 +87,7 @@ class SearchViewController: UIViewController, UITabBarDelegate, UISearchBarDeleg
         if !searchTerm.isEmpty {
             transaction.setSearchTerm(searchTerm)
         }
-        
-        recommendationManager.recommendResults.removeAll()
+
         
         let recommend = EMRecommendationRequest(logic: "PERSONAL")
         recommend.limit = 10

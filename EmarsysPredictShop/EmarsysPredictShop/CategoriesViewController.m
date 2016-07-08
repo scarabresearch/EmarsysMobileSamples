@@ -30,6 +30,7 @@
     self.recommendedTableView.delegate = self;
     self.recommendedTableView.dataSource = self;
     self.recommendResults = [[NSMutableArray alloc] init];
+    self.categories = [[NSMutableArray<NSString *> alloc] init];
     self.itemsWithTopics =
         [[NSMutableDictionary<id, NSMutableArray<Item *> *> alloc] init];
     self.categories = [[NSMutableArray<NSString *> alloc] init];
@@ -118,16 +119,15 @@ titleForHeaderInSection:(NSInteger)section {
 
 // TOPICAL
 - (void)sendRecommend {
+    [self.recommendResults removeAllObjects];
+    [self.categories removeAllObjects];
+    [self.itemsWithTopics removeAllObjects];
+    [self.recommendedTableView reloadData];
 
     EMSession *emarsysSession = [EMSession sharedSession];
     EMTransaction *transaction = [[EMTransaction alloc] init];
     NSArray<EMCartItem *> *cartItems = [[Cart sharedCart] convertItems];
     [transaction setCart:cartItems];
-
-    self.recommendResults = [[NSMutableArray alloc] init];
-    self.itemsWithTopics =
-        [[NSMutableDictionary<id, NSMutableArray<Item *> *> alloc] init];
-    self.categories = [[NSMutableArray<NSString *> alloc] init];
 
     for (int i = 0; i < 10; i++) {
         NSString *logic = [NSString stringWithFormat:@"%@%i", @"HOME_", i];

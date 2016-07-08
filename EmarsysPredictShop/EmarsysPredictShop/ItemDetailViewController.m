@@ -94,6 +94,8 @@ static NSString *const reuseIdentifier = @"ItemCell";
 }
 
 - (void)sendRecommend {
+    [self.recommendationManager.recommendResults removeAllObjects];
+    [self.recommendedCollectionView reloadData];
 
     EMSession *emarsysSession = [EMSession sharedSession];
     EMTransaction *transaction =
@@ -105,8 +107,6 @@ static NSString *const reuseIdentifier = @"ItemCell";
     // Passing on item ID to report product view. Item ID should match the
     // value listed in the Product Catalog
     [transaction setView:_item.itemID];
-
-    [self.recommendationManager.recommendResults removeAllObjects];
 
     NSString *logic = @"RELATED";
 

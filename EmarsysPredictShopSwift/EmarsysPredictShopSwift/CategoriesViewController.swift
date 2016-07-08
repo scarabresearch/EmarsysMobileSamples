@@ -94,14 +94,15 @@ class CategoriesViewController: UIViewController, UITableViewDataSource, UITable
     
     //TOPICAL
     func sendRecommend() {
+        recommendResults.removeAll()
+        itemsWithTopics.removeAll()
+        categories.removeAll()
+        self.recommendedTableView.reloadData()
+        
         let emarsysSession = EMSession.sharedSession()
         let transaction = EMTransaction()
         let cartItems = Cart.sharedCart.convertItems()
         transaction.setCart(cartItems)
-        
-        recommendResults.removeAll()
-        itemsWithTopics.removeAll()
-        categories.removeAll()
         
         for index in 0...10 {
             let logic = NSString(format:"%@%i", "HOME_", index) as String

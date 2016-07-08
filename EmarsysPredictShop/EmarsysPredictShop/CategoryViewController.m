@@ -97,6 +97,8 @@ static NSString *const reuseIdentifier = @"ItemCell";
 }
 
 - (void)sendRecommend {
+    [self.recommendationManager.recommendResults removeAllObjects];
+    [self.recommendedCollectionView reloadData];
 
     EMSession *emarsysSession = [EMSession sharedSession];
     EMTransaction *transaction = [[EMTransaction alloc] init];
@@ -106,8 +108,6 @@ static NSString *const reuseIdentifier = @"ItemCell";
     if (self.searchTerm) {
         [transaction setSearchTerm:self.searchTerm];
     }
-
-    [self.recommendationManager.recommendResults removeAllObjects];
 
     NSString *logic;
     NSMutableArray<NSString *> *exludeItems = nil;

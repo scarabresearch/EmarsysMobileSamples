@@ -81,13 +81,14 @@ class ItemDetailViewController: UIViewController, RecommendationManagerDelegate 
     }
     
     func sendRecommend() {
+        recommendationManager.recommendResults.removeAll()
+        self.recommendedCollectionView.reloadData()
+        
         let emarsysSession = EMSession.sharedSession()
         let transaction = EMTransaction.init(item: item.srcItem)
         let cartItems = Cart.sharedCart.convertItems()
         transaction.setCart(cartItems)
         transaction.setView(item.itemID)
-        
-        recommendationManager.recommendResults.removeAll()
         
         var logic = "RELATED"
         

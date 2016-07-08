@@ -84,6 +84,10 @@ class CategoryViewController: UIViewController, UITabBarDelegate, UISearchBarDel
     }
     
     func sendRecommend() {
+        recommendationManager.recommendResults.removeAll()
+        self.recommendedCollectionView.reloadData()
+        
+        
         let emarsysSession = EMSession.sharedSession()
         let transaction = EMTransaction()
         let cartItems = Cart.sharedCart.convertItems()
@@ -92,8 +96,6 @@ class CategoryViewController: UIViewController, UITabBarDelegate, UISearchBarDel
         if !searchTerm.isEmpty {
             transaction.setSearchTerm(searchTerm)
         }
-        
-        recommendationManager.recommendResults.removeAll()
         
         let logic: String
         var exludeItems: [String] = [String]()

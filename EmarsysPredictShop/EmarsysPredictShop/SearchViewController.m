@@ -83,6 +83,8 @@ static NSString *const reuseIdentifier = @"RecommendedItemCell";
 }
 
 - (void)sendRecommend {
+    [self.recommendationManager.recommendResults removeAllObjects];
+    [self.recommendedCollectionView reloadData];
 
     EMSession *emarsysSession = [EMSession sharedSession];
     EMTransaction *transaction = [[EMTransaction alloc] init];
@@ -92,8 +94,6 @@ static NSString *const reuseIdentifier = @"RecommendedItemCell";
     if (self.searchTerm) {
         [transaction setSearchTerm:self.searchTerm];
     }
-
-    [self.recommendationManager.recommendResults removeAllObjects];
 
     EMRecommendationRequest *recommend =
         [[EMRecommendationRequest alloc] initWithLogic:@"PERSONAL"];
