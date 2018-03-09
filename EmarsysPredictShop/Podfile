@@ -1,2 +1,5 @@
 platform :ios, '8.4'
-pod 'EmarsysPredictSDK', '>= 1.0'
+
+target "EmarsysPredictShop" do
+    pod 'EmarsysPredictSDK', '>= 1.0'
+end
